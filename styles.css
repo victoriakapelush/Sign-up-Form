@@ -1,0 +1,21 @@
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+}
+
+.background-picture {
+   background-image: url('https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+   width:30vw;
+   height:100vh;
+   
+   
+}
+
+.form-container {
+    background-color: rgb(232,232,232);
+    width:50vw;
+    height:100vh;
+}
