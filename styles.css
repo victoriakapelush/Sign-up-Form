@@ -15,17 +15,14 @@ body {
 .odin-side-bar {
     display: flex;
     justify-content: center;
-   /* margin: 0;*/
     opacity: .4;
     background-color: black;
-    /*padding: 0;*/
     margin-top: 180px;
 }
 
 .side-bar-logo {
     height: 110px;
     width: 100px;
-
 }
 
 .odin-side-bar p {
@@ -50,6 +47,12 @@ a:visited, a:hover, a:focus {
     color: white;
 }
 
+.letsdothis {
+    border: none;
+    background-color: #F8F8F8;
+    margin-bottom: 0;
+}
+
 .form-container {
     background-color: rgb(232,232,232);
     width: 50vw;
@@ -59,7 +62,34 @@ a:visited, a:hover, a:focus {
 
 .form-container p {
     color: black;
-    font-weight: bold;
     font-size: 20px;
     font-family:'Comic Sans MS', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+}
+
+fieldset {
+    border: none;
+}
+
+form {
+    background-color: #F8F8F8;
+    width: 100%;
+  
+}
+
+.name-info, .contact-info, .password-info {
+   display: inline-flex;
+   flex-direction: column;
+}
+
+#have-account {
+    font-size: 14px;
+}
+
+#login-link:hover {
+    color: #00FF00;
+}
+
+#login-link {
+    color: #2F4F4F;
 }
