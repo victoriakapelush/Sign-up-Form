@@ -84,6 +84,7 @@ form {
 
 #have-account {
     font-size: 14px;
+    margin: 10px 20px;
 }
 
 #login-link:hover {
@@ -92,4 +93,23 @@ form {
 
 #login-link {
     color: #2F4F4F;
+}
+
+button {
+    font-size: 14px;
+    color: white;
+    background-color: #2F4F4F;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 30px;
+    margin: 10px 20px;
+}
+
+button:hover {
+    background-color: lightgreen;
+}
+
+.text-above-form {
+    margin: 40px 30px;
+    margin-top: 130px;
 }
