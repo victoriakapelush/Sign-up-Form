@@ -54,4 +54,12 @@ a:visited, a:hover, a:focus {
     background-color: rgb(232,232,232);
     width: 50vw;
     height: 100vh;
+    display: block;
+}
+
+.form-container p {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Comic Sans MS', 'Arial Narrow', Arial, sans-serif;
 }
