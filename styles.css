@@ -9,13 +9,49 @@ body {
 .background-picture {
    background-image: url('https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
    width:30vw;
-   height:100vh;
-   
-   
+   height:100vh; 
+}
+
+.odin-side-bar {
+    display: flex;
+    justify-content: center;
+   /* margin: 0;*/
+    opacity: .4;
+    background-color: black;
+    /*padding: 0;*/
+    margin-top: 180px;
+}
+
+.side-bar-logo {
+    height: 110px;
+    width: 100px;
+
+}
+
+.odin-side-bar p {
+    color: white;
+    font-size: 80px;
+    font-family: 'Aclonica';
+    font-weight: bold;
+    margin: 10px;
+}
+
+.photo-ref {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 60vh;
+    opacity: 0.7;
+}
+
+a:visited, a:hover, a:focus {
+    text-decoration: none;
+    color: white;
 }
 
 .form-container {
     background-color: rgb(232,232,232);
-    width:50vw;
-    height:100vh;
+    width: 50vw;
+    height: 100vh;
 }
