@@ -24,18 +24,18 @@
         </div>
             <div>
                 <p class="letsdothis">Let's do this!</p>
-                <form>
+                <form method="post">
                     <fieldset class="name-info">
                         <label for="first_name">First Name</label>
-                        <input type="text" name="first_name" id="first_name" placeholder="Sarah">
+                        <input type="text" name="first_name" id="first_name" placeholder="Sarah" required>
                         <label for="last_name">Last Name</label>
-                        <input type="text" name="last_name" id="last_name" placeholder="Johnson">
+                        <input type="text" name="last_name" id="last_name" placeholder="Johnson" required>
                     </fieldset>
                     <fieldset class="contact-info">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="sarah@gmail.com">
+                        <input type="email" name="email" id="email" placeholder="sarah@gmail.com" required>
                         <label for="phone_number">Phone Number</label>
-                        <input type="text" name="phone_number" id="phone_number" placeholder="2121221122">
+                        <input type="text" name="phone_number" id="phone_number" placeholder="212-122-1122" required>
                     </fieldset>
                     <fieldset class="password-info">
                         <label for="password">Password</label>
@@ -45,7 +45,7 @@
                     </fieldset>
                 </form>
             </div>
-            <button>Create Account</button>
+            <button onclick="alertBtn()">Create Account</button>
             <p id="have-account">Already have an account? <a id="login-link">Log in</a></p>
     </div>
 </body>
