@@ -2,51 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javascript.js" type="text/javascript"></script>
-    <link href='styles.css' rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
-    <title>Sign-up Form</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href='styles2.css' rel="stylesheet">
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Sign-Up Form</title>
 </head>
 <body>
-    <div class="background-picture">
-        <div class="odin-side-bar">
-            <img class="side-bar-logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
-            <p>odin</p>
+    <div class="container">
+        <div class="img-container">
+            <img src="images/form.png">
         </div>
-            <p class="photo-ref">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
-    </div>        
-    <div class="form-container">
-        <div class="text-above-form">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-            <p>You <em>know</em> you want to.</p>
+        <div class="form-container">
+            <h1>Sign Up</h1>
+            <form class="w-full max-w-sm" id="form" action="#" method="post" required>
+                <fieldset id="name-box">
+                    <div class="flex items-center border-b border-teal-500 py-2" id="firstName-container">
+                        <img src="images/user.png" id="user-icon">
+                        <input id ="firstName" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="First Name" aria-label="First name">
+                    </div>
+                    <div class="flex items-center border-b border-teal-500 py-2" id="lastName-container">
+                        <img src="images/user.png" id="user-icon">
+                        <input id="lastName" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Last Name" aria-label="Last name">
+                    </div>
+                </fieldset>
+                <fieldset id="contact-info-box">
+                    <div class="flex items-center border-b border-teal-500 py-2">
+                        <img src="images/phone.png" id="phone-icon">
+                        <input id="phone" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Phone Number" aria-label="Phone Number">
+                    </div>
+                    <div class="flex items-center border-b border-teal-500 py-2">
+                        <img src="images/email.png" id="email-icon">
+                        <input id="email" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="flex items-center border-b border-teal-500 py-2">
+                        <img src="images/lock.svg" id="lock-icon">
+                        <input id="password" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="password" placeholder="Password" aria-label="Password">
+                    </div>
+                    <div class="flex items-center border-b border-teal-500 py-2">
+                        <img src="images/lock.svg" id="lock-icon">
+                        <input id="confirmPassword" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="password" placeholder="Confirm Password" aria-label="Password">
+                    </div>
+                </fieldset>
+            </form>
+            <p>By signing up, you are agreeing to our <strong>Terms & Conditions</strong><br> and <strong>Privacy Policy</strong></p>
+            <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" id="button">
+                Continue
+            </button>
+            <p>Already have an account? <strong>Login</strong></p>
         </div>
-            <div>
-                <p class="letsdothis">Let's do this!</p>
-                <form method="post">
-                    <fieldset class="name-info">
-                        <label for="first_name">First Name</label>
-                        <input type="text" name="first_name" id="first_name" placeholder="Sarah" required>
-                        <label for="last_name">Last Name</label>
-                        <input type="text" name="last_name" id="last_name" placeholder="Johnson" required>
-                    </fieldset>
-                    <fieldset class="contact-info">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="sarah@gmail.com" required>
-                        <label for="phone_number">Phone Number</label>
-                        <input type="text" name="phone_number" id="phone_number" placeholder="212-122-1122" required>
-                    </fieldset>
-                    <fieldset class="password-info">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
-                        <label for="password">Confirm Password</label>
-                        <input type="password" name="password" id="password" required>
-                    </fieldset>
-                </form>
-            </div>
-            <button onclick="alertBtn()">Create Account</button>
-            <p id="have-account">Already have an account? <a id="login-link">Log in</a></p>
     </div>
+    <footer>Copyright 2023 &copy;. <a href="https://github.com/victoriakapelush/Sign-up-Form" target="_blank">Victoria Kapelush</a></footer>
 </body>
 </html>
